@@ -1,0 +1,101 @@
+body {
+	background-color: rgb(246, 197, 225);
+	/* background-image: url("leaves.png"); */
+	/* background-repeat: repeat-x; */
+	/* background-position: right 3em;*/
+	/*background-size: 10%; */
+	/* background-attachment: scroll; */
+	/* opacity: 0.3; */
+}
+
+h1 {
+	text-shadow: 1px 1px 0 rgb(200, 189, 201);
+	background-color: rgb(245, 238, 228);
+	border-radius: 5px;
+	border: 3px solid rgb(192, 120, 183);
+	padding: 10px;
+}
+
+.feedback-form{
+	background-color: rgb(246, 236, 240);
+	/* background-image: url("3leaves.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: right; */
+	border-radius: 15px;
+	padding-left: 2em; padding-right: 2em;
+	padding-top: 1em; padding-bottom: 2em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.feedback-form > * {
+	position: relative;
+	z-index: 1;
+}
+
+.background-image{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	z-index: 0;
+}
+
+.background-image > img {
+	height: inherit;
+}
+
+.submit-btn{
+	background-color: #8ab87e;
+	border-color:  #79a07e;
+	border-width: 1.5px;
+	transition-duration: 0.3s;
+	color: rgb(255, 254, 255);
+}
+
+.submit-btn:hover{
+	background-color: #609867;
+	border-color:  #609867;
+	color: white;
+}
+
+
+:not(.btn-check)+.btn:active{
+	border-color:  #417b49;;
+	background-color: #417b49;
+	color: white;
+}
+
+.search-form{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	right: 0;
+	margin-right: 2em;
+	gap: 1em;
+}
+
+.search-btn{
+	color: rgb(255, 255, 255);
+	border-color: rgb(211, 208, 209);
+}
+
+.search-btn:hover{
+	/* background-color: #609867;
+	border-color:  #609867; */
+
+	background-color: rgb(255, 169, 199);
+	border-color: rgb(255, 169, 199);
+	/* border-color:  rgb(192, 120, 157); */
+	color: black;
+}
+
+:not(.btn-check)+.search-btn:active{
+	background-color: rgb(255, 133, 176);
+	border-color: rgb(255, 133, 176);
+	color: black;
+}
+
