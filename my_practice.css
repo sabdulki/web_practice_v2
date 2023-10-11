@@ -114,3 +114,8 @@ body {
 	margin-bottom: 2em;
 	border-radius: 50%;
   }
+
+  .h1-border{
+	padding: 1em;
+	border: 5px ridge rgb(136, 159, 221);
+  }

@@ -75,6 +75,7 @@ h1 {
 	flex-direction: row;
 	right: 0;
 	margin-right: 2em;
+	/* margin: auto; */
 	gap: 1em;
 }
 
@@ -99,3 +100,20 @@ h1 {
 	color: black;
 }
 
+.h3-border{
+	/* padding-left: 1em; */
+	padding: 5px;
+	border-left: 5px solid rgb(152, 89, 143);
+	border-bottom: 5px solid rgb(152, 89, 143);
+	border-top: 5px double rgb(152, 89, 143);
+	border-right: 5px double rgb(152, 89, 143);
+	}
+
+	.follow-div{
+		width:65%;
+		padding: 15px;
+		box-sizing: border-box; 
+		/* box-sizing отвечает за сохранение длины div-a и padding не будет изменять его длинну */
+		/* в данном примере все равно ничего не меняется */
+		/* max-width будет регулировать окно на маленьких или больших устройствах */
+	}
