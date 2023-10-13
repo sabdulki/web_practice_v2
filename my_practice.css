@@ -119,3 +119,13 @@ body {
 	padding: 1em;
 	border: 5px ridge rgb(136, 159, 221);
   }
+
+  .example-outline{
+	padding: 2em;
+	margin: 2em;
+	border-radius: 2em;
+	border: 2px solid black;
+	outline-style: dashed;
+	outline-width: 3px;
+	outline-color: #167fdb;
+  }
