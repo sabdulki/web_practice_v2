@@ -103,7 +103,7 @@ h1 {
 .h3-border{
 	/* padding-left: 1em; */
 	padding: 5px;
-	display: inline;
+	display: inline-block;
 	border-left: 5px solid rgb(152, 89, 143);
 	border-bottom: 5px solid rgb(152, 89, 143);
 	border-top: 5px double rgb(152, 89, 143);
@@ -138,4 +138,8 @@ h1 {
 	outline-style: 5px ridge pink;
 	border-radius: 1em;
 	/* хочу применить здесь outline-offset */
+}
+
+.emoji{
+	vertical-align: baseline;
 }
