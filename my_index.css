@@ -56,12 +56,21 @@ h1 {
 	color: rgb(255, 254, 255);
 }
 
-.submit-btn:hover{
+.submit-btn:hover, .check-btn:hover{
 	background-color: #609867;
 	border-color:  #609867;
 	color: white;
 }
 
+:not(.btn-check)+.btn:active{
+	border-color:  #417b49;;
+	background-color: #417b49;
+	color: white;
+}
+
+.check-btn{
+	transition-duration: 0.3s;
+}
 
 :not(.btn-check)+.btn:active{
 	border-color:  #417b49;;
@@ -138,4 +147,42 @@ h1 {
 	outline-style: 5px ridge pink;
 	border-radius: 1em;
 	/* хочу применить здесь outline-offset */
+}
+
+.row-class{
+	margin-top: 1em;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	gap: 2em;
+	flex-wrap: nowrap;
+}
+
+table{
+	width: 70%;
+	border: 1px double;
+	background-color: rgba(246, 236, 240, 0.5);
+} 
+
+tr, th, td{
+	border-bottom: 1px solid; 
+	/* i want border-style: double; but it doesn't work!!! */
+	color: rgb(61, 61, 61);
+	text-align: center;
+	letter-spacing: 1px;
+	/* text-align: justify; */
+	padding: 2px;
+	border-radius: 5px;
+}
+
+.table-div{
+	display: grid;
+	place-items: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 1px;
+	/* color: dimgray; */
 }

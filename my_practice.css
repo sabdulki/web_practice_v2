@@ -129,3 +129,7 @@ body {
 	outline-width: 3px;
 	outline-color: #167fdb;
   }
+
+.ul-footer{
+	list-style-image: url('icon1.png');
+}
