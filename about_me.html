@@ -23,6 +23,7 @@
 
 		.black-border {
 			border: 5px solid black; /* Задаем черную границу */
+			/* position: static; */
 		}
 
 		.colored-text {
@@ -37,16 +38,16 @@
 		}
 
 		.box {
-        background-color: rgb(255 255 255 / 0.3);
-        backdrop-filter: blur(10px);
-        padding: 10px;
-        border-radius: 8px;
-		margin-bottom: 1em;
+			background-color: rgb(255 255 255 / 0.3);
+			backdrop-filter: blur(10px);
+			padding: 10px;
+			border-radius: 8px;
+			margin-bottom: 1em;
 
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-      }
+			display: flex;
+			gap: 10px;
+			flex-direction: column;
+     	}
 
 	</style>
 
@@ -71,13 +72,24 @@
 			border-radius: 10px; /* Закругление углов ячеек */
 			background-color: #edffec;
 		}
+
+		.fix-navbar{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+			/* box-sizing: border-box;
+			margin-bottom: 10px; */
+		}
+
 	</style>
 
+	
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fix-navbar">
+		<div class="container" >
 		  <a class="navbar-brand p-0" href="index.html">
 			<img src="S.png" alt="logo" width="40" height="40" class="rounded-circle"></a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,9 +114,9 @@
 		</div>
 	</nav>
 
-	<div class="container my-4 text-center">
+	<div style="margin-top:5em" class="container text-center">
 		<div class="box"><h2 class="colored-text">Here you can get to know me better</h2></div>
-		<img  src="#" alt="sofya" class="rounded-image black-border">
+		<img  src="me.jpg" alt="sofya" class="rounded-image black-border">
 		<div class="box"><h4  class="colored-text">Some facts about me</h4></div>
 		<table class="table rounded-table">
 			<tr><td>Name</td><td>Sofia</td></tr>
@@ -114,6 +126,34 @@
 			<tr><td>Hobby</td><td>Reading books</td></tr>
 		</table>
 
+		<table class="table rounded-table">
+			<tr><td>Name</td><td>Sofia</td></tr>
+			<tr><td>Age</td><td>20</td></tr>
+			<tr><td>From</td><td>Russia, Kazan</td></tr>
+			<tr><td>Education</td><td>42 programming school Abu Dhabi</td></tr>
+			<tr><td>Hobby</td><td>Reading books</td></tr>
+		</table>
+		<table class="table rounded-table">
+			<tr><td>Name</td><td>Sofia</td></tr>
+			<tr><td>Age</td><td>20</td></tr>
+			<tr><td>From</td><td>Russia, Kazan</td></tr>
+			<tr><td>Education</td><td>42 programming school Abu Dhabi</td></tr>
+			<tr><td>Hobby</td><td>Reading books</td></tr>
+		</table>
+		<table class="table rounded-table">
+			<tr><td>Name</td><td>Sofia</td></tr>
+			<tr><td>Age</td><td>20</td></tr>
+			<tr><td>From</td><td>Russia, Kazan</td></tr>
+			<tr><td>Education</td><td>42 programming school Abu Dhabi</td></tr>
+			<tr><td>Hobby</td><td>Reading books</td></tr>
+		</table>
+		<table class="table rounded-table">
+			<tr><td>Name</td><td>Sofia</td></tr>
+			<tr><td>Age</td><td>20</td></tr>
+			<tr><td>From</td><td>Russia, Kazan</td></tr>
+			<tr><td>Education</td><td>42 programming school Abu Dhabi</td></tr>
+			<tr><td>Hobby</td><td>Reading books</td></tr>
+		</table>
 	</div>
 </body>
 </html>

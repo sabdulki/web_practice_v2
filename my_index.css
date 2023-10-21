@@ -29,6 +29,8 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+	overflow: hidden;
+	min-width: 500px;
 }
 
 .feedback-form > * {
@@ -41,7 +43,9 @@ h1 {
 	top: 0;
 	right: 0;
 	height: 100%;
+	/* width: 100%; */
 	z-index: 0;
+	/* overflow: hidden; */
 }
 
 .background-image > img {
@@ -56,7 +60,7 @@ h1 {
 	color: rgb(255, 254, 255);
 }
 
-.submit-btn:hover, .check-btn:hover{
+.submit-btn:hover{
 	background-color: #609867;
 	border-color:  #609867;
 	color: white;
@@ -66,10 +70,6 @@ h1 {
 	border-color:  #417b49;;
 	background-color: #417b49;
 	color: white;
-}
-
-.check-btn{
-	transition-duration: 0.3s;
 }
 
 :not(.btn-check)+.btn:active{
@@ -94,12 +94,8 @@ h1 {
 }
 
 .search-btn:hover{
-	/* background-color: #609867;
-	border-color:  #609867; */
-
 	background-color: rgb(255, 169, 199);
 	border-color: rgb(255, 169, 199);
-	/* border-color:  rgb(192, 120, 157); */
 	color: black;
 }
 
@@ -110,42 +106,57 @@ h1 {
 }
 
 .h3-border{
-	/* padding-left: 1em; */
 	padding: 5px;
 	display: inline;
 	border-left: 5px solid rgb(152, 89, 143);
 	border-bottom: 5px solid rgb(152, 89, 143);
 	border-top: 5px double rgb(152, 89, 143);
 	border-right: 5px double rgb(152, 89, 143);
-	/* margin: 1em; */
-	}
+}
+
+.follow-div:hover > .follow-cards{
+	opacity: 1;
+	/* background-color: #8ab87e; */
+}
 
 .follow-div{
 	/* width:65%; */
 	/* padding: 15px; */
 	/* box-sizing: border-box; */
+	margin-left: auto;
+	margin-right: auto;
+	width: inherit;
 	margin-top: 3em;
 	margin-bottom: 1em;
 	/* box-sizing отвечает за сохранение длины div-a и padding не будет изменять его длинну */
 	/* в данном примере все равно ничего не меняется */
 	/* max-width будет регулировать окно на маленьких или больших устройствах */
-	}
+
+}
 .follow-cards{
+	opacity: 0;
 	margin: inherit;
+	float: left;
 	display: flex;
 	flex-direction: row;
 	gap: 8em;
-	/* padding-right: 3px; */
-	
-	}
+	padding-right: 3px;
+}
 
 .card{
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	box-sizing: border-box; 
 	width: 250px;
 	height: 250px;
 	background-color: rgb(246, 236, 240);
-	align-items: flex-start;
-	outline-style: 5px ridge pink;
+	padding: 10px;
+	/* align-items: flex-start; */
+	outline: 5px ridge pink;
 	border-radius: 1em;
+
+
 	/* хочу применить здесь outline-offset */
 }
 
@@ -185,4 +196,24 @@ ul {
 	margin: 0;
 	padding: 1px;
 	/* color: dimgray; */
+}
+
+input[type="checkbox"]:checked{
+		border: 1px solid #417b49;
+		background-color:  #417b49;/* Новый цвет фона при выборе флажка */
+}
+
+input[type="checkbox"]:focus{
+	border: 1px solid #417b49;
+	box-shadow: 0 0 0 0.20em rgb(96, 152, 103, 0.35);
+	outline: 0;
+}
+
+.form-check-input[type=checkbox] {
+	margin-left: 0;
+}
+
+li::first-letter{
+	/* color: rgb(0, 0, 0); */
+	text-shadow: 1px 1px 0.5px #9e4f7c;
 }
